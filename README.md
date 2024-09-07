@@ -129,4 +129,17 @@ s2 = Student(marks = 65, name = "shaikh")
 print(s2.name,s2.marks)
 
 #8)
+class Student:
+  def __init__(self, name, marks):
+    self.name = name
+    self.marks = marks
+
+  def get_avg(self):
+      sum = 0
+      for i in self.marks:
+        sum += i
+      print("hi", self.name, "your average score is:", sum/3)
+
+s1 = Student("khan",[99,90,80])
+s1.get_avg()
 
